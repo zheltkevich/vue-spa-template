@@ -1,4 +1,3 @@
-.husky
 .cache
 dist/*
 dev-dist
