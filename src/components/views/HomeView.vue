@@ -1,5 +1,7 @@
-<script setup></script>
+<script setup>
+import IconEcosystem from '@icons/IconEcosystem.vue'
+</script>
 
 <template>
-    <main>HOME VIEW</main>
+    <div><IconEcosystem /> Home view</div>
 </template>
