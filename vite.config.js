@@ -9,6 +9,7 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
+            '@views': fileURLToPath(new URL('./src/components/views', import.meta.url)),
         },
     },
 })
