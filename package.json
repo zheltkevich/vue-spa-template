@@ -17,7 +17,6 @@
         "format": "prettier --write . --ignore-path .prettierignore"
     },
     "lint-staged": {
-        "*.{js,cjs,mjs,vue,css,scss}": "npm run format",
         "*.{vue,css,scss}": "npm run lint:css",
         "*.{vue,js,cjs,mjs}": "npm run lint:js"
     },
