@@ -15,17 +15,17 @@
         "check:styles": "stylelint \"**/*.{css,scss,vue}\"",
         "code:check": "npm run check:js && npm run check:styles",
         "fix:js": "eslint . --ext .vue,.js,.cjs,.mjs --quiet --fix --ignore-path .eslintignore",
-        "fix:css": "stylelint \"**/*.{css,scss,vue}\" --quiet --fix --ignore-path .stylelintignore",
+        "fix:styles": "stylelint \"**/*.{css,scss,vue}\" --quiet --fix --ignore-path .stylelintignore",
         "code:fix": "npm run fix:js && npm run fix:styles",
-        "format": "prettier --write . --ignore-path .prettierignore"
+        "code:format": "prettier --write . --ignore-path .prettierignore"
     },
     "lint-staged": {
+        "*": "npm run code:format",
         "*.{vue,css,scss}": "npm run fix:styles",
         "*.{vue,js,cjs,mjs}": "npm run fix:js"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",
-        "pre-push": "npm run format",
         "preserveUnused": true
     },
     "dependencies": {
