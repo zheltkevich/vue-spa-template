@@ -18,8 +18,8 @@
     },
     "lint-staged": {
         "*.{js,cjs,mjs,vue,css,scss}": "npm run format",
-        "*.{js,vue}": "npm run lint:js",
-        "*.{vue,css,scss}": "npm run lint:css"
+        "*.{vue,css,scss}": "npm run lint:css",
+        "*.{vue,js,cjs,mjs}": "npm run lint:js"
     },
     "simple-git-hooks": {
         "pre-commit": "npx lint-staged",
