@@ -10,7 +10,6 @@ import { RouterLink, RouterView } from 'vue-router'
                 <RouterLink :to="{ name: 'another' }">Another page</RouterLink>
             </nav>
         </nav>
-
         <RouterView />
     </div>
 </template>
