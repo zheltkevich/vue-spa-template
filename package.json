@@ -33,7 +33,6 @@
         "@vue/eslint-config-prettier": "^9.0.0",
         "eslint": "^8.56.0",
         "eslint-plugin-vue": "^9.21.1",
-        "husky": "^9.0.10",
         "lint-staged": "^15.2.1",
         "postcss-html": "^1.6.0",
         "prettier": "^3.2.4",
