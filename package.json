@@ -4,8 +4,8 @@
     "private": true,
     "type": "module",
     "engines": {
-        "npm": ">=10.0.0 <11.0.0",
-        "node": ">=20.0.0 <21.0.0"
+        "npm": "^10.0.0",
+        "node": "^20.0.0"
     },
     "scripts": {
         "dev": "vite",
@@ -13,14 +13,14 @@
         "preview": "vite preview",
         "check:js": "eslint . --ext .vue,.js,.cjs,.mjs",
         "check:styles": "stylelint \"**/*.{css,scss,vue}\"",
-        "code:check": "npm run check:js && npm run check:styles",
+        "check": "npm run check:js && npm run check:styles",
         "fix:js": "eslint . --ext .vue,.js,.cjs,.mjs --quiet --fix --ignore-path .eslintignore",
         "fix:styles": "stylelint \"**/*.{css,scss,vue}\" --quiet --fix --ignore-path .stylelintignore",
-        "code:fix": "npm run fix:js && npm run fix:styles",
-        "code:format": "prettier --write . --ignore-path .prettierignore"
+        "fix": "npm run fix:js && npm run fix:styles",
+        "format": "prettier --write . --ignore-path .prettierignore"
     },
     "lint-staged": {
-        "*": "npm run code:format",
+        "*": "npm run format",
         "*.{vue,css,scss}": "npm run fix:styles",
         "*.{vue,js,cjs,mjs}": "npm run fix:js"
     },
